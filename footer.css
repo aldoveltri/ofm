@@ -1,0 +1,226 @@
+footer {
+    background-color: rgba(255, 255, 255, 0.889);
+    padding-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.logo-footer {
+    width: 80px;
+    object-fit: contain;
+}
+
+.footertit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    margin-right: auto;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.link ul {
+    list-style: none;
+    gap: 30px;
+}
+
+.link li {
+    color: rgb(6, 3, 188);
+    font-size: 20px;
+    border-bottom: solid 2px transparent;
+    transition: all 0.3s ease;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.link a {
+    color: rgb(6, 3, 188);
+    display: block;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.link li:hover {
+    border-bottom: solid 2px rgb(6, 3, 188);
+}
+
+.link h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-wrap: nowrap;
+}
+
+.tit h4 {
+    color: #5b5757;
+}
+
+.footer-contatti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-contatti ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    gap: 30px;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-contatti a {
+    color: rgb(6, 3, 188);
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.footer-contatti a:hover {
+    color: rgb(6, 5, 71)
+}
+
+.policy-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy-footer ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.policy-footer a {
+    text-decoration: none;
+    color: rgb(6, 3, 188);
+}
+
+.link iframe {
+    width: 130%;
+    height: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.link iframe:hover {
+    transform: scale(1.03);
+}
+
+.num {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 520px) {
+    .footer {
+         flex-direction: column;  
+         text-align: center; 
+    }
+
+    .footertit {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .logo-footer {
+        width: 50px;
+    }
+
+    .footer-contatti ul {
+        font-size: 35px;
+        gap: 10px;
+    }
+
+    .footer-contatti a:hover {
+        color: rgb(6, 3, 188);
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .link {
+        align-items: center;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .link ul {
+        gap: 10px;
+    }
+
+    .link li {
+        font-size: 15px;
+    }
+
+    .link li:hover {
+        border-bottom: solid 2px transparent;
+    }
+
+    .link a {
+        display: block;
+    }
+
+    .link iframe {
+        width: 280px;
+        height: 180px;
+    }
+
+    .link iframe:hover {
+        transform: scale(1);
+    }
+
+    .policy-footer ul {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width: 1424px) {
+    .footertit {
+        margin-left: 5%;
+    }
+
+    .footer-links {
+        gap: 50px;
+    }
+
+    .link li:hover {
+        border-bottom: solid 2px transparent;
+    }
+
+    .link iframe {
+        width: 90%;
+    }
+    
+    .link iframe:hover {
+        transform: scale(1);
+    }
+}

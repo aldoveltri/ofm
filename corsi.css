@@ -1,0 +1,172 @@
+.titcorsi {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.subtitcorsi {
+    font-size: 20px;
+    text-align: justify;
+    color: #fff;
+    max-width: 800px;
+    margin: 20px auto 20px;
+}
+
+.volantino-corsi {
+    width: 400px;
+    display: flex;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease;
+}
+
+.volantino-corsi:hover {
+    transform: scale(1.03);
+}
+
+.lezioni {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.strumenti {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.strumenti h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.strumenti p {
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    min-width: 300px;
+}
+
+.strumenti img {
+    width: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.strumento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: solid 3px rgb(6, 3, 188);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.strumento .flauto {
+    width: 120px;
+}
+
+.strumento .clarinetto {
+    width: 100px;
+}
+
+.strumento .corno {
+    width: 120px;
+    rotate: 160deg;
+}
+
+.strumento .tromba {
+    width: 105px;
+    rotate: 15deg;
+}
+
+.strumento .trombone {
+    width: 80px;
+    rotate: -70deg;
+}
+
+.strumento .euphonium {
+    width: 100px;
+}
+
+.strumento .tuba {
+    width: 80px;
+}
+
+.strumento .percussioni {
+    width: 140px;
+}
+
+.strumento:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 521px) {
+    .titcorsi {
+        font-size: 25px;
+    }
+
+    .subtitcorsi {
+        font-size: 18px;
+        max-width: 85%;
+    }
+
+    .volantino-corsi {
+        width: 280px;
+    }
+
+    .volantino-corsi:hover {
+        transform: scale(1);
+    }
+    .strumenti {
+        margin-top: -40px;
+        margin-bottom: -40px;
+        grid-template-columns: repeat(1, 1fr);
+        transform: scale(0.85);
+    }
+
+    .strumento:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 1023px) {
+    .titcorsi {
+        font-size: 27px;
+    }
+
+    .subtitcorsi {
+        font-size: 24px;
+        max-width: 88%;
+    }
+
+    .volantino-corsi {
+        width: 400px;
+    }
+
+    .volantino-corsi:hover {
+        transform: scale(1);
+    }
+
+    .strumenti {
+        grid-template-columns: repeat(3, 1fr);
+        transform: scale(0.85);
+    }
+
+    .strumento:hover {
+        transform: scale(1);
+    }
+}

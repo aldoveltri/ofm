@@ -1,0 +1,230 @@
+.staff {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.staff .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.staff .container .content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 50px auto 50px;
+}
+
+.staff .container .content .persona {
+    width: 480px;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.staff .container .content #sinistra{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: auto auto auto 100px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    gap: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.staff .container .content #destra{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: auto;
+    padding: 100px auto auto auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.staff .container .content #sinistra .desc{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.staff .container .content #destra .desc{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.staff .container .content .persona .desc b{
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.staff .container .content .persona img {
+    width: 150px;
+    border-radius: 180px;
+    margin-top: 1.5px;
+}
+
+.staff .container .content #sinistra img {
+    margin-left: -20px;
+}
+
+.staff .container .content #destra img {
+    margin-right: -20px;
+}
+
+.staff .container .content .persona:hover {
+    transform: scale(1.03);
+}
+
+.membri {
+    background: rgba(0, 0, 0, 0.7);
+    border: solid 3px rgb(6, 3, 188);
+    width: 80%;
+    border-radius: 15px;
+    margin: auto auto 20px auto;
+    padding: 30px 50px 50px 50px;
+}
+
+.membri b {
+    text-wrap: nowrap;
+}
+
+.organico {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.membri ul {
+    color: #fff;
+    font-size: 20px;
+    list-style: none;
+}
+
+.membri h1 {
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.staff .container a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 520px) {
+    .staff .container .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .staff .container .content .persona {
+        margin: 20px auto !important;
+        padding: 0;
+        width: 77%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .staff .container .content .persona img {
+        width: 38%;
+    }
+
+    .staff .container .content .persona .desc b {
+        font-size: 20px;
+    }
+
+    .staff .container {
+        width: 100%;
+    }
+
+    .staff .container .content .persona:hover {
+        transform: scale(1);
+    }
+
+    .membri {
+        width: 50%;
+        padding: 30px 50px 50px 50px;
+    }
+    
+    .membri h1 {
+        padding-bottom: 30px;
+        font-size: 25px;
+    }
+    
+    .organico {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        gap: 15px;
+    }
+    
+    .membri ul {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 521px) and (max-width: 1023px) {
+    .staff .container .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .staff .container .content .persona {
+        transform: scale(0.7);
+        width: 400px;
+        margin: -17px auto !important;
+        padding: 0;
+    }
+
+    .staff .container {
+        width: 100%;
+    }
+
+    .staff .container .content .persona:hover {
+        transform: scale(0.7);
+    }
+
+    .membri {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .membri ul {
+        font-size: 15px;
+    }
+}

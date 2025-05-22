@@ -1,0 +1,294 @@
+.chisiamo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 400px;
+    margin: 20px auto;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 50px;
+}
+
+.chisiamo .content {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 530px;
+    border: solid 3px rgb(6, 3, 188);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.chisiamo .content img {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.tit-about {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.subtit-about {
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.chisiamo .content button {
+    width: 270px;
+    height: 70px;
+    margin: auto auto 0 auto;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: solid 2px rgb(6, 3, 188);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chisiamo .content a {
+    text-decoration: none;
+    margin: 0 auto 0 auto;
+}
+
+.chisiamo .content:hover {
+    transform: scale(1.03);
+}
+
+.chisiamo .content button:hover {
+    transform: scale(1.05);
+}
+
+.scelta {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 200px;
+}
+
+.scelta .dentro {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 530px;
+    border: solid 3px rgb(6, 3, 188);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.scelta .dentro img {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.scelta .dentro button {
+    width: 270px;
+    height: 70px;
+    margin: auto auto 0 auto;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: solid 2px rgb(6, 3, 188);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scelta .dentro a {
+    text-decoration: none;
+    margin: 0 auto 0 auto;
+}
+
+.scelta .dentro:hover {
+    transform: scale(1.03);
+}
+
+.scelta .dentro button:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 520px) {
+    .footer-about {
+        position: relative;
+    }
+    
+    .chisiamo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .chisiamo .content {
+        width: 75%;
+        height: 420px;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+
+    .chisiamo .content:hover {
+        transform: scale(1);
+    }
+
+    .tit-about {
+        font-size: 22px;
+    }
+
+    .subtit-about {
+        margin: 10px auto 10px;
+        font-size: 16px;
+    }
+
+    .chisiamo .content button {
+        margin: auto auto 0 auto;
+        width: 180px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 13px;
+        padding: 5px;
+    }
+
+    .chisiamo .content button:hover {
+        transform: scale(1);
+    }
+
+    .scelta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .scelta .dentro {
+        width: 75%;
+        height: 420px;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+
+    .scelta .dentro:hover {
+        transform: scale(1);
+    }
+
+    .scelta .dentro button {
+        margin: auto auto 0 auto;
+        width: 180px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 13px;
+        padding: 5px;
+    }
+
+    .scelta .dentro button:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width: 1023px) {
+
+    .footer-about {
+        position: relative;
+    }
+    
+    .chisiamo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 400px;
+        margin: 20px auto;
+        justify-content: center;
+        gap: 70px;
+        margin-bottom: 50px;
+    }
+
+    .chisiamo .content {
+        width: 300px;
+        height: auto;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+
+    .chisiamo .content:hover {
+        transform: scale(1);
+    }
+
+    .tit-about {
+        font-size: 30px;
+    }
+
+    .subtit-about {
+        margin: 10px auto 10px;
+        font-size: 24px;
+        max-width: 600px;
+    }
+
+    .scelta .content button {
+        margin: auto auto 0 auto;
+        width: 250px;
+        height: 80px;
+        font-size: 24px;
+        border-radius: 13px;
+        padding: 5px;
+    }
+
+    .chisiamo .content button:hover {
+        transform: scale(1);
+    }
+
+    .scelta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 400px;
+        margin: 20px auto;
+        justify-content: center;
+        gap: 70px;
+        margin-bottom: 50px;
+    }
+
+    .scelta .dentro {
+        width: 300px;
+        height: auto;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+
+    .scelta .dentro:hover {
+        transform: scale(1);
+    }
+
+    .scelta .dentro button {
+        margin: auto auto 0 auto;
+        width: 250px;
+        height: 80px;
+        font-size: 24px;
+        border-radius: 13px;
+        padding: 5px;
+    }
+
+    .scelta .dentro button:hover {
+        transform: scale(1);
+    }
+}

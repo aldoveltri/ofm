@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(assets/sfondo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dona {
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.dona .content {
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    border: solid 3px rgb(6, 3, 188);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dona .content img {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.tit-dona {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.subtit-dona {
+    font-size: 23px !important;
+    text-align: center;
+    color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.dona .content button {
+    width: 270px;
+    height: 70px;
+    margin: auto auto 0 auto;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: solid 2px rgb(6, 3, 188);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dona .content a {
+    text-decoration: none;
+    margin: 0 auto 0 auto;
+}
+
+.dona .content:hover {
+    transform: scale(1.03);
+}
+
+.dona .content button:hover {
+    transform: scale(1.05);
+}
+
+.corsi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    width: 560px;
+    height: 150px;
+    margin: 400px auto;
+    padding-bottom: 30px;
+}
+
+.corsi h2 {
+    font-size: 40px;
+}
+
+.corsi .content {
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    border: solid 3px rgb(6, 3, 188);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.corsi .content h3 {
+    font-size: 35px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc p {
+    font-size: 25px;
+    text-align: center;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+
+.corsi button {
+    width: 270px;
+    height: 70px;
+    margin: auto auto 0 auto;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: solid 2px rgb(6, 3, 188);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.corsi a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: auto;
+}
+
+.corsi .content:hover {
+    transform: scale(1.03);
+}
+
+.corsi button:hover {
+    transform: scale(1.1);
+}
+
+.corsi img {
+    width: 500px;
+    object-fit: contain;
+    display: flex;
+    margin: 20px auto 0;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.back-top img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.back-top {
+    background-color: rgb(6, 3, 188);
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    right: 80px;
+    bottom: 80px;
+    animation-name: appear;
+    animation-timeline: scroll(y);
+    box-shadow:  0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        display: none;
+        position: fixed;
+    }
+
+    10% {
+        opacity: 1;
+        display: flex;
+        position: fixed;
+    }
+
+    100% {
+        opacity: 1;
+        display: flex;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(assets/sfondo-mobile.webp);
+    }
+
+    .dona {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .dona .content {
+        width: 75%;
+        height: auto;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+
+    .dona .content:hover {
+        transform: scale(1);
+    }
+
+    .tit-dona {
+        font-size: 30px;
+    }
+
+    .subtit-dona {
+        margin: 10px auto 10px;
+        font-size: 20px !important;
+    }
+
+    .dona .content button {
+        margin: auto auto 0 auto;
+        width: 180px;
+        height: 60px;
+        font-size: 22px;
+        border-radius: 13px;
+        padding: 5px;
+    }
+
+    .dona .content button:hover {
+        transform: scale(1);
+    }
+
+    .corsi {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    
+    .corsi h2 {
+        font-size: 30px;
+    }
+    
+    .corsi .content {
+        width: 83%;
+        height: auto;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+    
+    .corsi .content h3 {
+        font-size: 28px;
+    }
+
+    .corsi img {
+        width: 100%;
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto 0;
+        box-shadow: none;
+    }
+    
+    .desc {
+        flex-direction: column;
+    }
+    
+    .desc p {
+        font-size: 20px;
+        text-align: center;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+        
+    .corsi button {
+        margin: auto auto 0 auto;
+        width: 180px;
+        height: 60px;
+        font-size: 22px;
+        border-radius: 13px;
+        padding: 5px;
+    }
+
+    .corsi .content:hover {
+        transform: scale(1);
+    }
+
+    .corsi button:hover {
+        transform: scale(1);
+    }
+
+    .back-top img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .back-top {
+        width: 50px;
+        height: 50px;
+        right: 25px;
+        bottom: 25px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width: 1023px){
+    .dona {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        gap: 5px;
+    }
+
+    .dona .content {
+        width: 75%;
+        height: auto;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+
+    .dona .content:hover {
+        transform: scale(1);
+    }
+
+    .tit-about {
+        font-size: 30px;
+    }
+
+    .subtit-dona {
+        margin: 10px auto 10px;
+        font-size: 23px;
+    }
+
+    .dona .content button {
+        margin: auto auto 0 auto;
+        width: 250px;
+        height: 80px;
+        font-size: 24px;
+        border-radius: 13px;
+        padding: 5px;
+    }
+
+    .dona .content button:hover {
+        transform: scale(1);
+    }
+
+    .corsi {
+        width: 70%;
+        height: auto;
+        margin: 20px auto;
+        padding-bottom: 30px;
+    }
+    
+    .corsi h2 {
+        font-size: 30px;
+    }
+    
+    .corsi .content {
+        border: solid 3px rgb(6, 3, 188);
+        border-radius: 18px;
+        padding: 25px;
+    }
+    
+    .corsi .content h3 {
+        font-size: 28px;
+    }
+
+    .desc {
+        flex-direction: column;
+    }
+    
+    .desc p {
+        font-size: 23px;
+        text-align: center;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+        
+    .corsi button {
+        width: 250px;
+        height: 80px;
+        font-size: 24px;
+        border-radius: 13px;
+    }
+
+    .corsi .content:hover {
+        transform: scale(1);
+    }
+
+    .corsi button:hover {
+        transform: scale(1);
+    }
+
+    .back-top img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-top {
+        width: 60px;
+        height: 60px;
+        right: 30px;
+        bottom: 30px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+}

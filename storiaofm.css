@@ -1,0 +1,175 @@
+.immagini {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+    width: 400px;
+    padding-bottom: 30px;
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease;
+}
+
+.storia {
+    font-size: 20px;
+    text-align: justify;
+    color: #fff;
+    max-width: 70%;
+    margin: 20px auto 20px;
+    line-height: 28px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    border: solid 2px rgb(6, 3, 188);
+}
+
+#storiayband {
+    max-width: 55%;
+}
+
+#maestro {
+    max-width: 55%;
+}
+
+.mstr {
+    padding-bottom: 220px;
+}
+
+.img2 {
+    width: 370px;
+}
+
+.img4 {
+    width: 390px;
+}
+
+.img1:hover {
+    transform: scale(1.03);
+}
+
+.img2:hover {
+    transform: scale(1.03);
+}
+
+.img3:hover {
+    transform: scale(1.03);
+}
+
+.img4:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 520px) {
+    .immagini {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .storia {
+        font-size: 15px;
+        line-height: 23px;
+        padding: 20px;
+    }
+
+    #storiayband {
+        max-width: 70%;
+    }
+    
+    #maestro {
+        max-width: 70%;
+    }
+
+    .mstr {
+        padding-bottom: 15px;
+    }
+
+    .img1, .img2, .img3, .img4 {
+        width: 300px;
+        box-shadow: none;
+    }
+
+    .img1 {
+        width: 286px; 
+    }
+
+    .img2 {
+        width: 294px;
+    }
+
+    .img4 {
+        width: 300px;
+    }
+
+    .img1:hover {
+        transform: scale(1);
+    }
+    
+    .img2:hover {
+        transform: scale(1);
+    }
+    
+    .img3:hover {
+        transform: scale(1);
+    }
+    
+    .img4:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width: 1023px) {
+    .immagini {
+        gap: 50px;
+        padding-bottom: 20px;
+    }
+
+    #storiayband {
+        max-width: 65%;
+    }
+
+    #maestro {
+        max-width: 65%;
+    }
+
+    .img1, .img2, .img3, .img4 {
+        width: 300px;
+        box-shadow: none;
+    }
+
+    .img1 {
+        width: 314px; 
+    }
+
+    .img2 {
+        width: 294px;
+    }
+
+    .img4 {
+        width: 300px;
+    }
+
+    .img1:hover {
+        transform: scale(1);
+    }
+    
+    .img2:hover {
+        transform: scale(1);
+    }
+    
+    .img3:hover {
+        transform: scale(1);
+    }
+    
+    .img4:hover {
+        transform: scale(1);
+    }
+}
